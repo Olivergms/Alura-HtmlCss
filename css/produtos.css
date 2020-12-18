@@ -1,0 +1,88 @@
+header{
+    background: #bbbbbb;
+    padding: 20px 0;
+}
+.box{
+    width: 940px; /*resolução padrão para browsers*/
+    position: relative; /*coloca a posiçao absoluta do nav dentro da box*/
+    margin: 0 auto;
+}
+nav li{
+    display: inline;    /* convertendo lista para horizontal */
+    margin: 0 0 0 15px; /* espaçamnento externo */
+
+}
+nav a{
+    text-transform: uppercase;  /* convertendo o texto para letra maiuscula*/
+    color: black;
+    font-weight: bold;    /* fonte em negrito */
+    font-size: 22px;        /* aumentando tamanho da fonte*/ 
+    text-decoration: none;  /* removendo decoração do texto */
+
+}
+nav{
+    /* position: absolute, eu consigo posicionar meu elemento em qualquer lugar da página.*/
+   position: absolute;  /* poscionamento absoluto, irá tirar  a tag do header*/
+   top: 110px;
+   right: 0;
+
+}
+.produtos li{
+    display: inline-block;  /*colocando os elementos li lado a lado*/
+    text-align: center;
+    width: 30%;
+    vertical-align: top;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+  /*
+    border-color:#000000;
+    border-width: 2px;
+    border-style: solid;    */
+    border: #000000 2px solid;
+    border-radius: 10px;
+}
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
+}
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px ;
+}
+.produto-descricao{
+    font-size: 18px;
+}
+nav a:hover{    /* quando o usuario passar o mouse sobre a tag irá mudar*/
+    color: #C78C19;
+    text-decoration: underline;
+}
+.produtos li:hover{
+    border-color: #C78C19;
+}
+
+.produtos li:active{ /* ao clicar, muda para a cor verde */
+    border-color: #088c19;
+}
+
+.produtos li:hover h2{ /* quando passar o mouse em cima do h2 li do produto, irá mudar o tamanho*/
+    font-size: 35px;
+}
+footer{
+    text-align: center;
+    background: url("../imagens/bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
