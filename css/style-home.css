@@ -1,0 +1,63 @@
+
+.titulo-principal{
+    padding-left: 20px;
+}
+
+/* principal*/
+
+.main{
+   background: #CCCCCC;
+   padding: 30px;
+}
+.titulo-centralizado{
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+em strong {
+    color: #FF0000;
+}
+/*modificando elementos pelo id*/
+#logo{
+    width: 100%;
+}
+
+#missao {
+    font-size: 20px
+}
+
+/*rodapé*/
+/*alterando classes*/
+.itens{
+    font-style: italic;
+  
+}
+
+ul{
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+    margin-right: 15%;
+}
+.beneficios{
+    padding: 20px;
+}
+.beneficios-img{
+    width: 50%;
+    display: inline-block;
+}
+
+
+
+/*
+padding - espaçamento interno do elemento
+margin - espaçamento externo do elemento
+
+
+Classes - são repetiveis, podemos usa-las em varios elementos com o mesmo nome, diferente do ID
+O ID pode-se usar apenas em um elemnto
+
+div- é uma divisão da pagina
+*/

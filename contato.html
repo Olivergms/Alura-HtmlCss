@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <!-- link abaixo reseta as formatações padrão do browser-->
+        <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/style.css">
+        
+        <title>Contato</title>
+    </head>
+    <body>
+        <header>
+            
+            <div class="box">
+                <h1> <img src="imagens/logo.png" alt="Falha ao carregar"></h1>
+                <nav >
+                    <ul >
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="produtos.html">Produtos</a></li>
+                        <li><a href="contato.html">Contato</a></li>
+                    </ul>  
+                </nav>
+            </div>
+        </header>
+        <main>
+            <form>
+                <label for="nomesobrenome">Nome completo</label>
+                <input type="text" id="nomesobrenome" class="input-padrao" required >
+
+                <label for="email">Email</label>
+                <input type="email" id="email" class="input-padrao" required placeholder="seuEmail@dominio.com">
+
+                <label for="telefone">Telefone</label>
+                <input type="tel" id="telefone" class="input-padrao" required placeholder="(XX)-XXXXX-XXXX">
+                
+                <label for="mensagem">Mensagem</label>
+                <textarea id="mensagem" cols="30" rows="10" class="input-padrao"></textarea>
+
+                <!-- Fieldset é uma alternativa de div-->
+                <fieldset>
+                    <!-- legend é uma alternativa da tag p dentro de fieldset-->
+                    <legend> Como prefere o nosso contato ?</legend>
+                    <label for="radio-email"> <input type="radio" name="contato" value="email" id="radio-email">Email</label>
+                   
+                    <label for="radio-telefone"> <input type="radio" name="contato" value="telefone" id="radio-telefone">Telefone</label>
+                   
+                    <label for="radio-whatsapp"><input type="radio" name="contato" value="whatsapp" id="radio-whatsapp" checked>Whatsapp</label>
+                    
+                </fieldset>
+
+                 <!-- Fieldset é uma alternativa de div-->
+                <fieldset>
+                     <!-- legend é uma alternativa da tag p dentro de fieldset-->
+                    <legend>Qual horário prefere ser atendido ?</legend>
+                    <select>
+                        <option>Manhã</option>
+                        <option value="">Tarde</option>
+                        <option value="">Noite</option>
+                        
+                    </select>
+                </fieldset>
+                <label> <input type="checkbox" class="checkbox" checked> Gostaria de receber nossas novidades por email ?</label>
+                <input type="submit" class ="enviar"value="Enviar formulário">
+            </form>
+            <!--Criando tabela-->
+            <table>
+                <!--linha é tr, coluna td-->
+                <!-- thead tag para titulo dentro de tabela-->
+                <thead>
+                    <tr>
+                        <!--tag th é uma celula do head-->
+                        <th>Dia</th>
+                        <th>Horário</th>
+                    </tr>
+                </thead>
+                <!--tbody é o corpo da tabela-->
+                <tbody>
+                    <tr>
+                        <td>Segunda</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Quarta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                    <tr>
+                        <td>Sexta</td>
+                        <td>8h ~ 20h</td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        <footer>
+            <img src="imagens/logo-branco.png" alt="Logo rodapé">
+             <p class="copyright">&copy;Copyright Barbearia alura - 2020</p>
+        </footer>
+    </body>
+</html>

@@ -1,63 +1,142 @@
-
-.titulo-principal{
-    padding-left: 20px;
+header{
+    background: #bbbbbb;
+    padding: 20px 0;
 }
-
-/* principal*/
-
-.main{
-   background: #CCCCCC;
-   padding: 30px;
+.box{
+    width: 940px; /*resolução padrão para browsers*/
+    position: relative; /*coloca a posiçao absoluta do nav dentro da box*/
+    margin: 0 auto;
 }
-.titulo-centralizado{
+nav li{
+    display: inline;    /* convertendo lista para horizontal */
+    margin: 0 0 0 15px; /* espaçamnento externo */
+
+}
+nav a{
+    text-transform: uppercase;  /* convertendo o texto para letra maiuscula*/
+    color: black;
+    font-weight: bold;    /* fonte em negrito */
+    font-size: 22px;        /* aumentando tamanho da fonte*/ 
+    text-decoration: none;  /* removendo decoração do texto */
+
+}
+nav{
+    /* position: absolute, eu consigo posicionar meu elemento em qualquer lugar da página.*/
+   position: absolute;  /* poscionamento absoluto, irá tirar  a tag do header*/
+   top: 110px; 
+   right: 0;
+
+}
+.produtos li{
+    display: inline-block;  /*colocando os elementos li lado a lado*/
     text-align: center;
-}
-
-p {
-    text-align: center;
-}
-em strong {
-    color: #FF0000;
-}
-/*modificando elementos pelo id*/
-#logo{
-    width: 100%;
-}
-
-#missao {
-    font-size: 20px
-}
-
-/*rodapé*/
-/*alterando classes*/
-.itens{
-    font-style: italic;
-  
-}
-
-ul{
-    display: inline-block;
+    width: 30%;
     vertical-align: top;
-    width: 20%;
-    margin-right: 15%;
+    margin: 0 1.5%;
+    padding: 30px 20px;
+    box-sizing: border-box;
+  /*
+    border-color:#000000;
+    border-width: 2px;
+    border-style: solid;    */
+    border: #000000 2px solid;
+    border-radius: 10px;
 }
-.beneficios{
-    padding: 20px;
+
+.produtos{
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px 0;
 }
-.beneficios-img{
+.produtos h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+.produto-preco{
+    font-size: 22px;
+    font-weight: bold;
+    margin-top: 10px ;
+}
+.produto-descricao{
+    font-size: 18px;
+}
+nav a:hover{    /* quando o usuario passar o mouse sobre a tag irá mudar*/
+    color: #C78C19;
+    text-decoration: underline;
+}
+.produtos li:hover{
+    border-color: #C78C19;
+}
+
+.produtos li:active{ /* ao clicar, muda para a cor verde */
+    border-color: #088c19;
+}
+
+.produtos li:hover h2{ /* quando passar o mouse em cima do h2 li do produto, irá mudar o tamanho*/
+    font-size: 35px;
+}
+footer{
+    text-align: center;
+    background: url("../imagens/bg.jpg");
+    padding: 40px 0;
+}
+
+.copyright{
+    color: #ffffff;
+    font-size: 13px;
+    margin: 20px 0 0;
+}
+
+main{
+    width: 940px;
+    margin: 0 auto;
+}
+form{
+    margin: 40px 0;
+   
+}
+form label, form legend{
+    display: block;
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+.input-padrao{
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 25px;
     width: 50%;
-    display: inline-block;
 }
-
-
-
-/*
-padding - espaçamento interno do elemento
-margin - espaçamento externo do elemento
-
-
-Classes - são repetiveis, podemos usa-las em varios elementos com o mesmo nome, diferente do ID
-O ID pode-se usar apenas em um elemnto
-
-div- é uma divisão da pagina
-*/
+.checkbox{
+    margin: 20px 0;
+}
+.enviar{
+    width: 40%;
+    padding: 15px 0;
+    background: orange;
+    color: white;
+    font-weight: bold;
+    border: none;
+    /*border-radius deixa a borda arredondada*/
+    border-radius: 5px;
+    /*demora 3 segundos para fazer toda a transição*/
+    transition: 1s all;
+    /*quando passa o cursor por cima do botão, ele muda para a "mãozinha"*/
+    cursor: pointer;
+}
+.enviar:hover{
+    background: darkorange;
+    /*ao passar o cursor por cima do botão, ele será aumentado 20%*/
+    transform: scale(1.2);
+}
+table{
+    margin: 20px 0 40px;
+}
+thead{
+    background: #555555;
+    color: white;
+    font-weight: bold;
+}
+td, th {
+    border: 1px solid #000000;
+    padding: 8px 15px;
+}
